@@ -31,7 +31,7 @@ export default function App() {
       name:"Travel muse clone ",
       desc:"Travel clone using TAILWIND CSS",
       img:"https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?cs=srgb&dl=pexels-freestockpro-3278215.jpg&fm=jpg",
-      link:"https://your-weather-demo.com"
+      link:"https://traveller-pied.vercel.app/"
     },
     {
       name:"StarBucks clone",
