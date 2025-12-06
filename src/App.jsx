@@ -16,7 +16,7 @@ export default function App() {
 
   const projects = [
     {
-      name:"Decoration Booking App",
+      name:"BloodDonor Booking App",
       desc:"Blood Donor App using REACT",
       img:"https://i.pinimg.com/originals/af/e7/b9/afe7b90735c6b1726de086ad669056f8.jpg",
       link:"https://blood-donor-app-9150a.web.app/"
