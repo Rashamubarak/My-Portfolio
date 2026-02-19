@@ -87,7 +87,7 @@ export default function App() {
 
           <Typography sx={{ fontSize:25, marginTop:"10px", color:"#6c9becff" }}>
             <Typewriter options={{
-              strings:["MERN Developer","Frontend Engineer","UI Enthusiast","IoT / Embedded Systems"],
+              strings:["MERN Stack Developer","Junior Software Developer","React Developer","Frontend Developer","Angular Developer","UI/UX Developer"],
               autoStart:true, loop:true
             }}/>
           </Typography>
