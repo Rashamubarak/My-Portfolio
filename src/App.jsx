@@ -33,101 +33,105 @@ import resumeFile from "./assets/resume.pdf";
 export default function App() {
   /* ================= COLORS ================= */
 
-const primaryBlue = "#d4ff14";
-const purple = "#8B5CF6";
-const background = "#000207";
-const darkCard = "#111827";
+  const primaryBlue = "#d4ff14";
+  const purple = "#8B5CF6";
+  const background = "#000207";
+  const darkCard = "#111827";
 
   /* ================= PROJECTS ================= */
 
   const projects = [
     {
-      name: "Smart Water Monitoring System",
-      desc: "MERN-based app to monitor water levels and quality, with responsive UI and CRUD operations.",
-      img: "https://tse1.mm.bing.net/th/id/OIP.tBtVc-wTCbHCVgQjQGgQwgHaDf?rs=1&pid=ImgDetMain&o=7&rm=3",
-      link: "https://smart-water-monitoring-system.vercel.app/",
-    },
-    {
-      name: "BloodDonor Booking App",
-      desc: "React app for browsing and booking blood donors with Firebase Authentication and Firestore.",
-      img: "https://i.pinimg.com/originals/af/e7/b9/afe7b90735c6b1726de086ad669056f8.jpg",
-      link: "https://blood-donor-app-9150a.web.app/",
-    },
-    {
-      name: "Micro ATS Interview Scheduler ",
-      desc: "Developed scheduling logic preventing overlapping bookings—demonstrating attention to detail and conflict resolution",
-      img: "https://thumbs.dreamstime.com/b/online-interview-icon-simple-illustration-128919195.jpg",
-      link: "https://micro-ats.vercel.app/",
-    },
-    {
-      name: "Customer Management Dashboard",
-      desc: "Developed Customer Management Dashboard Using Next.js.",
+      name: "Advanced CRM Dashboard",
+      desc: "Developed a customer management dashboard using Next.js to organize customer information and present business data through a structured interface.",
       img: "https://cdni.iconscout.com/illustration/premium/thumb/woman-managing-support-dashboard-illustration-svg-download-png-12668360.png",
       link: "https://advanced-crm-dashboard-liard.vercel.app/",
     },
     {
+      name: "Smart Water Monitoring System",
+      desc: "MERN-based application for monitoring water levels and quality, with dashboard features and CRUD operations.",
+      img: "https://tse1.mm.bing.net/th/id/OIP.tBtVc-wTCbHCVgQjQGgQwgHaDf?rs=1&pid=ImgDetMain&o=7&rm=3",
+      link: "https://smart-water-monitoring-system.vercel.app/",
+    },
+    {
+      name: "Blood Donor Booking App",
+      desc: "React application for browsing and booking blood donors using Firebase Authentication and Firestore.",
+      img: "https://i.pinimg.com/originals/af/e7/b9/afe7b90735c6b1726de086ad669056f8.jpg",
+      link: "https://blood-donor-app-9150a.web.app/",
+    },
+    {
+      name: "Micro ATS Interview Scheduler",
+      desc: "Developed an interview scheduling application with logic to detect overlapping bookings and support scheduling workflows.",
+      img: "https://thumbs.dreamstime.com/b/online-interview-icon-simple-illustration-128919195.jpg",
+      link: "https://micro-ats.vercel.app/",
+    },
+    {
       name: "7UP Website",
-      desc: "Interactive 7UP promotional website built using GSAP animations.",
+      desc: "Interactive promotional website featuring GSAP animations and engaging visual elements.",
       img: "https://www.7up.com/images/products/slider/7up_featured_m.jpg",
       link: "https://7up-softdrink-e1b867gsap.netlify.app/",
     },
     {
       name: "Travel Muse Clone",
-      desc: "Tailwind CSS project cloning Travel website with responsive design.",
+      desc: "Travel website clone built using Tailwind CSS with a focus on responsive layouts and user-friendly presentation.",
       img: "https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg",
       link: "https://traveller-pied.vercel.app/",
     },
-  
   ];
 
-  /* ================= CUSTOMER SERVICE SKILLS ================= */
 
-  const customerSkills = [
-    {
-      icon: <FaHeadset />,
-      title: "Customer Service",
-      text: "Handling customer queries, providing assistance and maintaining a positive service experience.",
-    },
-    {
-      icon: <FaUsers />,
-      title: "Customer Relations",
-      text: "Building professional relationships with customers and understanding their needs.",
-    },
-    {
-      icon: <FaComments />,
-      title: "Communication",
-      text: "Clear verbal and written communication with customers, colleagues and stakeholders.",
-    },
-    {
-      icon: <FaTasks />,
-      title: "Coordination",
-      text: "Coordinating tasks between different teams and following up to ensure completion.",
-    },
-    {
-      icon: <FaProjectDiagram />,
-      title: "Project Support",
-      text: "Supporting projects through task tracking, documentation, communication and follow-up.",
-    },
-    {
-      icon: <FaLightbulb />,
-      title: "Problem Solving",
-      text: "Understanding problems, identifying solutions and coordinating with the appropriate teams.",
-    },
 
-  ];
+
+/* ================= PROFESSIONAL SKILLS ================= */
+
+const customerSkills = [
+  {
+    icon: <FaTasks />,
+    title: "Problem Solving",
+    text: "Identify issues, analyze requirements and develop practical solutions to improve user experiences.",
+  },
+  {
+    icon: <FaComments />,
+    title: "Communication",
+    text: "Communicate clearly with team members and stakeholders to understand requirements and share ideas.",
+  },
+  {
+    icon: <FaProjectDiagram />,
+    title: "Team Collaboration",
+    text: "Collaborate with others to support project goals, coordinate tasks and contribute to shared outcomes.",
+  },
+  {
+    icon: <FaLightbulb />,
+    title: "Adaptability & Learning",
+    text: "Adapt to new tools and technologies while continuously improving technical and professional skills.",
+  },
+  {
+    icon: <FaUsers />,
+    title: "User-Focused Thinking",
+    text: "Consider user needs and usability when approaching interfaces, features and digital solutions.",
+  },
+  {
+    icon: <FaHeadset />,
+    title: "Task & Project Coordination",
+    text: "Organize tasks, manage priorities and follow up on activities to support timely project completion.",
+  },
+];
+
 
   /* ================= TECHNICAL SKILLS ================= */
 
   const technicalSkills = [
-    "MERN Stack",
     "React.js",
+    "Next.js",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "MERN Stack",
     "Node.js",
     "Express.js",
     "MongoDB",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "Tailwind CSS",
+    "REST APIs",
     "Firebase",
     "Git & GitHub",
     "Advanced MS Excel",
@@ -145,15 +149,27 @@ const darkCard = "#111827";
       img: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
     },
     {
+      name: "JAVASCRIPT",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    },
+    {
       name: "REACT",
       img: "https://cdn-icons-png.flaticon.com/512/1126/1126012.png",
+    },
+    {
+      name: "NEXT.JS",
+      img: "https://cdn.simpleicons.org/nextdotjs/FFFFFF",
+    },
+    {
+      name: "TAILWIND CSS",
+      img: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
     },
     {
       name: "MONGODB",
       img: "https://vectorseek.com/wp-content/uploads/2023/10/Mongodb-Icon-Logo-Vector.svg-.png",
     },
     {
-      name: "NODE",
+      name: "NODE.JS",
       img: "https://cdn-icons-png.flaticon.com/512/919/919825.png",
     },
   ];
@@ -164,61 +180,68 @@ const darkCard = "#111827";
     {
       icon: FaLinkedin,
       link: "https://www.linkedin.com/in/rasha-mubarak/",
+      label: "LinkedIn",
     },
     {
       icon: FaGithub,
       link: "https://github.com/Rashamubarak",
+      label: "GitHub",
     },
     {
       icon: FaEnvelope,
       link: "mailto:rashamubarak458@gmail.com",
+      label: "Email",
     },
     {
       icon: FaWhatsapp,
       link: "https://wa.me/9656832483",
+      label: "WhatsApp",
     },
     {
       icon: FaInstagram,
       link: "https://www.instagram.com/rashamubarak_/",
+      label: "Instagram",
     },
   ];
+
+  /* ================= RENDER ================= */
 
   return (
     <div
       style={{
         fontFamily: "Inter, Arial, sans-serif",
-        background: background,
+        background,
         color: "#FFFFFF",
         minHeight: "100vh",
         overflowX: "hidden",
       }}
     >
-
-      {/* =====================================================
-          NAVBAR
-      ====================================================== */}
+      {/* ================= NAVBAR ================= */}
 
       <AppBar
         position="fixed"
         sx={{
           background: "rgba(7,11,24,0.92)",
           backdropFilter: "blur(12px)",
-          boxShadow: "0 2px 20px rgba(0,245,255,0.08)",
-          borderBottom: "1px solid rgba(0,245,255,0.12)",
+          boxShadow: "0 2px 20px rgba(212,255,20,0.08)",
+          borderBottom: "1px solid rgba(212,255,20,0.12)",
         }}
       >
         <Toolbar
           sx={{
             justifyContent: "space-between",
             minHeight: "70px",
+            flexWrap: "wrap",
+            gap: 1,
+            py: 1,
           }}
         >
           <Typography
             sx={{
               color: primaryBlue,
               fontWeight: "bold",
-              letterSpacing: "3px",
-              fontSize: "18px",
+              letterSpacing: "2px",
+              fontSize: { xs: "14px", md: "18px" },
               textShadow: `0 0 12px ${primaryBlue}`,
             }}
           >
@@ -228,7 +251,7 @@ const darkCard = "#111827";
           <div
             style={{
               display: "flex",
-              gap: "20px",
+              gap: "16px",
               alignItems: "center",
               flexWrap: "wrap",
             }}
@@ -246,15 +269,14 @@ const darkCard = "#111827";
                 to={item}
                 smooth
                 spy
-                offset={-70}
+                offset={-80}
                 duration={600}
                 style={{
                   cursor: "pointer",
                   color: "#FFFFFF",
-                  fontSize: "13px",
+                  fontSize: "12px",
                   fontWeight: "600",
                   letterSpacing: "0.5px",
-                  transition: "0.3s",
                 }}
               >
                 {item.toUpperCase()}
@@ -264,23 +286,21 @@ const darkCard = "#111827";
         </Toolbar>
       </AppBar>
 
-      {/* =====================================================
-          HOME
-      ====================================================== */}
+      {/* ================= HOME ================= */}
 
       <section
         id="home"
         style={{
           paddingTop: "140px",
+          paddingBottom: "70px",
           textAlign: "center",
-          minHeight: "100vh",
+          minHeight: "90vh",
           display: "flex",
           alignItems: "center",
           position: "relative",
+          boxSizing: "border-box",
         }}
       >
-        {/* Background glow */}
-
         <div
           style={{
             position: "absolute",
@@ -295,14 +315,13 @@ const darkCard = "#111827";
           }}
         />
 
-        <Container style={{ position: "relative", zIndex: 2 }}>
+        <Container sx={{ position: "relative", zIndex: 2 }}>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-
-            {/* Profile */}
+            {/* PROFILE IMAGE */}
 
             <div
               style={{
@@ -312,25 +331,26 @@ const darkCard = "#111827";
                 padding: "4px",
                 borderRadius: "50%",
                 background: `linear-gradient(135deg, ${primaryBlue}, ${purple})`,
-                boxShadow: `0 0 35px rgba(0,245,255,0.35)`,
+                boxShadow: `0 0 35px rgba(212,255,20,0.18)`,
               }}
             >
               <img
                 src={profileImage}
-                alt="Rasha Mubarak"
+                alt="Rasha Mubarack"
                 style={{
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
                   borderRadius: "50%",
                   border: "5px solid #070B18",
+                  boxSizing: "border-box",
                 }}
               />
             </div>
 
             <Typography
               sx={{
-                marginTop: "30px",
+                mt: 4,
                 color: "#9CA3AF",
                 fontSize: "14px",
                 letterSpacing: "3px",
@@ -341,32 +361,26 @@ const darkCard = "#111827";
 
             <Typography
               sx={{
-                fontSize: {
-                  xs: "42px",
-                  md: "60px",
-                },
+                fontSize: { xs: "36px", sm: "46px", md: "60px" },
                 fontWeight: "bold",
-                marginTop: "10px",
+                mt: 1,
               }}
             >
               Hi, I'm{" "}
               <span
                 style={{
                   color: primaryBlue,
-                  textShadow: `0 0 20px rgba(0,245,255,0.5)`,
+                  textShadow: `0 0 20px rgba(212,255,20,0.25)`,
                 }}
               >
-                Rasha Mubarak
+                Rasha Mubarack
               </span>
             </Typography>
 
             <Typography
               sx={{
-                fontSize: {
-                  xs: "20px",
-                  md: "27px",
-                },
-                marginTop: "15px",
+                fontSize: { xs: "20px", md: "27px" },
+                mt: 2,
                 color: primaryBlue,
                 fontWeight: "bold",
                 minHeight: "40px",
@@ -375,12 +389,12 @@ const darkCard = "#111827";
               <Typewriter
                 options={{
                   strings: [
-                    "Customer Service Professional",
-                    "Project Coordinator",
+                    "Front-End Developer",
+                    "React.js & Next.js Developer",
                     "MERN Stack Developer",
-                    "Frontend Developer",
-                    "Customer Experience Enthusiast",
-                    "Technology Enthusiast",
+                    "Web Application Developer",
+                    "Advanced MS Excel",
+                    "Communication & Coordination",
                   ],
                   autoStart: true,
                   loop: true,
@@ -391,15 +405,16 @@ const darkCard = "#111827";
 
             <Typography
               sx={{
-                maxWidth: "700px",
-                margin: "20px auto",
+                maxWidth: "720px",
+                mt: 2,
+                mx: "auto",
                 color: "#9CA3AF",
                 lineHeight: 1.8,
               }}
             >
-              Customer-focused professional combining communication,
-              coordination, problem-solving and technology to create
-              efficient solutions and positive experiences.
+              B.Tech graduate with web development experience, skilled in
+              building user-friendly interfaces, working with data and
+              collaborating to create practical digital solutions.
             </Typography>
 
             <Button
@@ -409,14 +424,14 @@ const darkCard = "#111827";
                 mt: 3,
                 background: primaryBlue,
                 color: "#050816",
-                padding: "12px 25px",
+                px: 3,
+                py: 1.5,
                 borderRadius: "30px",
                 fontWeight: "bold",
-                boxShadow: `0 0 20px rgba(0,245,255,0.25)`,
-
+                boxShadow: "0 0 20px rgba(212,255,20,0.15)",
                 "&:hover": {
                   background: "#FFFFFF",
-                  boxShadow: `0 0 30px rgba(0,245,255,0.6)`,
+                  boxShadow: "0 0 30px rgba(212,255,20,0.35)",
                 },
               }}
             >
@@ -427,31 +442,26 @@ const darkCard = "#111827";
         </Container>
       </section>
 
-      {/* =====================================================
-          ABOUT
-      ====================================================== */}
+      {/* ================= ABOUT ================= */}
 
       <section
         id="about"
         style={{
           padding: "100px 0",
           background: "rgba(255,255,255,0.015)",
+          scrollMarginTop: "80px",
         }}
       >
         <Container>
-
           <Typography
             variant="h4"
             sx={{
               textAlign: "center",
               fontWeight: "bold",
-              marginBottom: "15px",
+              mb: 2,
             }}
           >
-            ABOUT{" "}
-            <span style={{ color: primaryBlue }}>
-              ME
-            </span>
+            ABOUT <span style={{ color: primaryBlue }}>ME</span>
           </Typography>
 
           <Typography
@@ -459,11 +469,12 @@ const darkCard = "#111827";
               textAlign: "center",
               color: "#9CA3AF",
               maxWidth: "700px",
-              margin: "0 auto 50px",
+              mx: "auto",
+              mb: 6,
             }}
           >
-            A combination of customer service, coordination,
-            communication and technical capabilities.
+            Front-end development, web technologies, data skills and
+            professional strengths that support effective collaboration.
           </Typography>
 
           <Container
@@ -471,54 +482,54 @@ const darkCard = "#111827";
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              gap: "60px",
+              gap: { xs: 4, md: 7 },
               flexWrap: "wrap",
             }}
           >
-
             <motion.img
               whileHover={{ scale: 1.03 }}
               src="https://img.freepik.com/premium-vector/hand-drawing-cartoon-girl-wearing-hijab-with-smile-face_488586-717.jpg?w=2000"
-              alt="About"
+              alt="Illustration"
               style={{
-                width: "300px",
+                width: "min(300px, 85vw)",
                 borderRadius: "50%",
                 background: darkCard,
                 padding: "15px",
-                border: `2px solid rgba(0,245,255,0.2)`,
-                boxShadow: `0 0 25px rgba(0,245,255,0.08)`,
+                border: "2px solid rgba(212,255,20,0.2)",
+                boxShadow: "0 0 25px rgba(212,255,20,0.08)",
+                boxSizing: "border-box",
               }}
             />
 
             <div
               style={{
+                width: "100%",
                 maxWidth: "560px",
                 display: "flex",
                 flexDirection: "column",
                 gap: "15px",
               }}
             >
-
               {[
                 {
-                  title: "Customer Service",
-                  text: "Focused on understanding customer needs, responding professionally and creating positive service experiences.",
+                  title: "Front-End Development",
+                  text: "Build responsive, user-friendly web interfaces using React.js, Next.js, JavaScript, HTML and CSS.",
                 },
                 {
-                  title: "Coordination",
-                  text: "Experienced in coordinating with different teams, stakeholders and organizations to complete tasks effectively.",
+                  title: "Full-Stack Development",
+                  text: "Develop web applications using the MERN stack, with knowledge of APIs, backend integration and database management.",
                 },
                 {
-                  title: "Communication",
-                  text: "Strong verbal and written communication with the ability to work with people from different backgrounds.",
+                  title: "Data & Productivity Tools",
+                  text: "Trained in Advanced MS Excel, with skills in spreadsheet management, data organization and reporting.",
                 },
                 {
-                  title: "Technology",
-                  text: "MERN stack development experience with an interest in using technology to improve processes and customer experiences.",
+                  title: "Communication & Coordination",
+                  text: "Apply communication, teamwork, problem-solving and coordination skills to support projects and user needs.",
                 },
               ].map((item, index) => (
                 <motion.div
-                  key={index}
+                  key={item.title}
                   whileHover={{
                     scale: 1.02,
                     borderColor: primaryBlue,
@@ -543,7 +554,8 @@ const darkCard = "#111827";
 
                   <Typography
                     sx={{
-                      opacity: 0.8,
+                      color: "#D1D5DB",
+                      opacity: 0.85,
                       mt: 1,
                       lineHeight: 1.7,
                     }}
@@ -552,24 +564,21 @@ const darkCard = "#111827";
                   </Typography>
                 </motion.div>
               ))}
-
             </div>
           </Container>
         </Container>
       </section>
 
-      {/* =====================================================
-          CUSTOMER SERVICE & COORDINATION
-      ====================================================== */}
+      {/* ================= PROFESSIONAL SKILLS ================= */}
 
       <section
         id="skills"
         style={{
           padding: "100px 0",
+          scrollMarginTop: "80px",
         }}
       >
         <Container>
-
           <Typography
             variant="h4"
             sx={{
@@ -577,10 +586,8 @@ const darkCard = "#111827";
               fontWeight: "bold",
             }}
           >
-            CUSTOMER SERVICE{" "}
-            <span style={{ color: primaryBlue }}>
-              & COORDINATION
-            </span>
+            PROFESSIONAL{" "}
+            <span style={{ color: primaryBlue }}>SKILLS</span>
           </Typography>
 
           <Typography
@@ -588,39 +595,36 @@ const darkCard = "#111827";
               textAlign: "center",
               color: "#9CA3AF",
               maxWidth: "700px",
-              margin: "15px auto 50px",
+              mx: "auto",
+              mt: 2,
+              mb: 6,
             }}
           >
-            Professional strengths that support customer experience,
-            coordination and day-to-day operations.
+            Strong communication, problem-solving, teamwork, and coordination skills that complement my technical expertise and support effective project delivery.
           </Typography>
 
           <Container
             sx={{
               display: "grid",
-              gridTemplateColumns:
-                "repeat(auto-fit, minmax(260px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
               gap: "20px",
             }}
           >
-
-            {customerSkills.map((skill, index) => (
+            {customerSkills.map((skill) => (
               <motion.div
-                key={index}
+                key={skill.title}
                 whileHover={{
                   y: -8,
-                  boxShadow:
-                    "0 0 25px rgba(0,245,255,0.12)",
+                  boxShadow: "0 0 25px rgba(212,255,20,0.08)",
                 }}
                 style={{
                   background: darkCard,
                   padding: "28px",
                   borderRadius: "15px",
-                  border: "1px solid rgba(0,245,255,0.1)",
+                  border: "1px solid rgba(212,255,20,0.1)",
                   transition: "0.3s",
                 }}
               >
-
                 <div
                   style={{
                     width: "50px",
@@ -630,7 +634,7 @@ const darkCard = "#111827";
                     justifyContent: "center",
                     borderRadius: "12px",
                     color: primaryBlue,
-                    background: "rgba(0,245,255,0.08)",
+                    background: "rgba(212,255,20,0.08)",
                     fontSize: "23px",
                     marginBottom: "18px",
                   }}
@@ -652,18 +656,14 @@ const darkCard = "#111827";
                     color: "#9CA3AF",
                     fontSize: "14px",
                     lineHeight: 1.7,
-                    marginTop: "10px",
+                    mt: 1,
                   }}
                 >
                   {skill.text}
                 </Typography>
-
               </motion.div>
             ))}
-
           </Container>
-
-          {/* KEYWORDS */}
 
           <div
             style={{
@@ -676,40 +676,35 @@ const darkCard = "#111827";
           >
             {[
               "Customer Relations",
-              "Complaint Handling",
-              "Stakeholder Communication",
-              "Cross-functional Coordination",
-              "Service Excellence",
+              "Professional Communication",
+              "Team Collaboration",
               "Problem Solving",
               "Documentation",
               "Task Follow-up",
-              "Team Collaboration",
               "Time Management",
-              "Customer Experience",
+              "Project Coordination",
+              "Data Organization",
               "Operations Support",
-            ].map((item, index) => (
+            ].map((item) => (
               <span
-                key={index}
+                key={item}
                 style={{
                   padding: "9px 15px",
                   borderRadius: "25px",
-                  border: "1px solid rgba(0,245,255,0.25)",
+                  border: "1px solid rgba(212,255,20,0.25)",
                   color: "#D1D5DB",
                   fontSize: "13px",
-                  background: "rgba(0,245,255,0.03)",
+                  background: "rgba(212,255,20,0.03)",
                 }}
               >
                 {item}
               </span>
             ))}
           </div>
-
         </Container>
       </section>
 
-      {/* =====================================================
-          TECHNICAL SKILLS
-      ====================================================== */}
+      {/* ================= TECHNICAL SKILLS ================= */}
 
       <section
         style={{
@@ -718,7 +713,6 @@ const darkCard = "#111827";
         }}
       >
         <Container>
-
           <Typography
             variant="h4"
             sx={{
@@ -726,10 +720,17 @@ const darkCard = "#111827";
               fontWeight: "bold",
             }}
           >
-            TECHNICAL{" "}
-            <span style={{ color: primaryBlue }}>
-              SKILLS
-            </span>
+            TECHNICAL <span style={{ color: primaryBlue }}>SKILLS</span>
+          </Typography>
+
+          <Typography
+            sx={{
+              textAlign: "center",
+              color: "#9CA3AF",
+              mt: 2,
+            }}
+          >
+            Technologies and tools used in my development projects.
           </Typography>
 
           <div
@@ -741,9 +742,9 @@ const darkCard = "#111827";
               marginTop: "40px",
             }}
           >
-            {technicalSkills.map((skill, index) => (
+            {technicalSkills.map((skill) => (
               <motion.div
-                key={index}
+                key={skill}
                 whileHover={{
                   scale: 1.05,
                   color: primaryBlue,
@@ -764,28 +765,25 @@ const darkCard = "#111827";
               </motion.div>
             ))}
           </div>
-
         </Container>
       </section>
 
-      {/* =====================================================
-          TECHNOLOGIES
-      ====================================================== */}
+      {/* ================= TECHNOLOGIES ================= */}
 
       <section
         id="languages"
         style={{
           padding: "100px 0",
+          scrollMarginTop: "80px",
         }}
       >
         <Container>
-
           <Typography
             variant="h4"
             sx={{
               textAlign: "center",
               fontWeight: "bold",
-              marginBottom: "15px",
+              mb: 2,
             }}
           >
             TECHNOLOGIES
@@ -795,7 +793,7 @@ const darkCard = "#111827";
             sx={{
               textAlign: "center",
               color: "#9CA3AF",
-              marginBottom: "50px",
+              mb: 6,
             }}
           >
             Technologies and tools used across my projects.
@@ -806,13 +804,12 @@ const darkCard = "#111827";
               display: "flex",
               justifyContent: "center",
               flexWrap: "wrap",
-              gap: "30px",
+              gap: "25px",
             }}
           >
-
-            {technologies.map((technology, index) => (
+            {technologies.map((technology) => (
               <motion.div
-                key={index}
+                key={technology.name}
                 whileHover={{
                   y: -8,
                   scale: 1.04,
@@ -830,12 +827,12 @@ const darkCard = "#111827";
                   transition: "0.3s",
                 }}
               >
-
                 <img
                   src={technology.img}
                   alt={technology.name}
-                  width="70"
-                  height="70"
+                  width="60"
+                  height="60"
+                  loading="lazy"
                   style={{
                     objectFit: "contain",
                   }}
@@ -845,32 +842,29 @@ const darkCard = "#111827";
                   sx={{
                     mt: 2,
                     fontWeight: "bold",
-                    fontSize: "13px",
+                    fontSize: "12px",
+                    textAlign: "center",
                   }}
                 >
                   {technology.name}
                 </Typography>
-
               </motion.div>
             ))}
-
           </Container>
         </Container>
       </section>
 
-      {/* =====================================================
-          PROJECTS
-      ====================================================== */}
+      {/* ================= PROJECTS ================= */}
 
       <section
         id="projects"
         style={{
           padding: "100px 0",
           background: "rgba(255,255,255,0.015)",
+          scrollMarginTop: "80px",
         }}
       >
         <Container>
-
           <Typography
             variant="h4"
             sx={{
@@ -878,10 +872,7 @@ const darkCard = "#111827";
               fontWeight: "bold",
             }}
           >
-            MY{" "}
-            <span style={{ color: primaryBlue }}>
-              PROJECTS
-            </span>
+            MY <span style={{ color: primaryBlue }}>PROJECTS</span>
           </Typography>
 
           <Typography
@@ -889,11 +880,13 @@ const darkCard = "#111827";
               textAlign: "center",
               color: "#9CA3AF",
               maxWidth: "650px",
-              margin: "15px auto 45px",
+              mx: "auto",
+              mt: 2,
+              mb: 6,
             }}
           >
-            A selection of projects demonstrating development,
-            creativity, problem-solving and user-focused design.
+            A selection of projects demonstrating front-end development,
+            web technologies, creativity and problem-solving.
           </Typography>
 
           <Container
@@ -904,32 +897,28 @@ const darkCard = "#111827";
               flexWrap: "wrap",
             }}
           >
-
-            {projects.map((project, index) => (
+            {projects.map((project) => (
               <motion.div
-                key={index}
-                whileHover={{
-                  y: -8,
-                }}
+                key={project.name}
+                whileHover={{ y: -8 }}
                 transition={{ duration: 0.25 }}
               >
-
                 <Card
                   sx={{
-                    width: "350px",
+                    width: { xs: "min(350px, 82vw)", sm: "350px" },
                     background: darkCard,
                     color: "#FFFFFF",
                     borderRadius: "15px",
                     overflow: "hidden",
-                    border:
-                      "1px solid rgba(255,255,255,0.08)",
+                    border: "1px solid rgba(255,255,255,0.08)",
                     boxShadow: "none",
+                    height: "100%",
                   }}
                 >
-
                   <img
                     src={project.img}
                     alt={project.name}
+                    loading="lazy"
                     style={{
                       width: "100%",
                       height: "200px",
@@ -938,12 +927,7 @@ const darkCard = "#111827";
                     }}
                   />
 
-                  <div
-                    style={{
-                      padding: "22px",
-                    }}
-                  >
-
+                  <div style={{ padding: "22px" }}>
                     <Typography
                       variant="h6"
                       sx={{
@@ -958,14 +942,18 @@ const darkCard = "#111827";
                         color: "#9CA3AF",
                         fontSize: "14px",
                         mt: 1,
-                        lineHeight: 1.6,
-                        minHeight: "68px",
+                        lineHeight: 1.7,
+                        minHeight: "90px",
                       }}
                     >
                       {project.desc}
                     </Typography>
 
                     <Button
+                      component="a"
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       sx={{
                         mt: 2,
                         width: "100%",
@@ -973,97 +961,86 @@ const darkCard = "#111827";
                         color: "#050816",
                         borderRadius: "30px",
                         fontWeight: "bold",
-
                         "&:hover": {
                           background: "#FFFFFF",
-                          boxShadow:
-                            "0 0 20px rgba(0,245,255,0.5)",
+                          boxShadow: "0 0 20px rgba(212,255,20,0.25)",
                         },
                       }}
-                      onClick={() =>
-                        window.open(
-                          project.link,
-                          "_blank",
-                          "noopener,noreferrer"
-                        )
-                      }
                     >
                       VIEW PROJECT
                     </Button>
-
                   </div>
-
                 </Card>
-
               </motion.div>
             ))}
-
           </Container>
         </Container>
       </section>
 
-      {/* =====================================================
-          CONTACT
-      ====================================================== */}
+      {/* ================= CONTACT ================= */}
 
       <section
         id="contact"
         style={{
           padding: "100px 0",
           textAlign: "center",
+          scrollMarginTop: "80px",
         }}
       >
         <Container>
-
           <Typography
             variant="h4"
-            sx={{
-              fontWeight: "bold",
-            }}
+            sx={{ fontWeight: "bold" }}
           >
-            LET'S{" "}
-            <span style={{ color: primaryBlue }}>
-              CONNECT
-            </span>
+            LET'S <span style={{ color: primaryBlue }}>CONNECT</span>
           </Typography>
 
           <Typography
             sx={{
               color: "#9CA3AF",
               maxWidth: "600px",
-              margin: "15px auto",
+              mx: "auto",
+              mt: 2,
             }}
           >
-            Feel free to reach out for opportunities,
+            Feel free to reach out for front-end development opportunities,
             collaborations or professional connections.
           </Typography>
 
           <form
             action="mailto:rashamubarak458@gmail.com"
+            method="post"
+            encType="text/plain"
             style={{
               maxWidth: "450px",
               margin: "40px auto",
               background: darkCard,
               padding: "25px",
               borderRadius: "15px",
-              border: "1px solid rgba(0,245,255,0.1)",
+              border: "1px solid rgba(212,255,20,0.1)",
+              boxSizing: "border-box",
             }}
           >
-
             <input
+              name="Name"
               placeholder="Name"
+              required
               style={input}
             />
 
             <input
+              name="Email"
               placeholder="Email"
               type="email"
+              required
               style={input}
             />
 
             <textarea
+              name="Message"
               placeholder="Message"
               rows={4}
+              required
               style={input}
             />
 
@@ -1076,7 +1053,6 @@ const darkCard = "#111827";
                 mt: 1,
                 borderRadius: "30px",
                 fontWeight: "bold",
-
                 "&:hover": {
                   background: "#FFFFFF",
                 },
@@ -1084,33 +1060,35 @@ const darkCard = "#111827";
             >
               SEND MESSAGE
             </Button>
-
           </form>
 
-          {/* SOCIAL */}
+          {/* SOCIAL LINKS */}
 
           <div
             style={{
               display: "flex",
               justifyContent: "center",
               gap: "25px",
-              fontSize: "32px",
+              fontSize: "30px",
               marginTop: "35px",
+              flexWrap: "wrap",
             }}
           >
-
-            {socialLinks.map((social, index) => {
+            {socialLinks.map((social) => {
               const Icon = social.icon;
 
               return (
                 <motion.a
-                  key={index}
+                  key={social.label}
                   whileHover={{
                     scale: 1.2,
+                    color: primaryBlue,
                   }}
                   href={social.link}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  title={social.label}
                   style={{
                     color: "#FFFFFF",
                     transition: "0.3s",
@@ -1120,47 +1098,39 @@ const darkCard = "#111827";
                 </motion.a>
               );
             })}
-
           </div>
-
         </Container>
       </section>
 
-      {/* =====================================================
-          FOOTER
-      ====================================================== */}
+      {/* ================= FOOTER ================= */}
 
       <footer
         style={{
           padding: "25px",
           textAlign: "center",
-          borderTop:
-            "1px solid rgba(255,255,255,0.08)",
+          borderTop: "1px solid rgba(255,255,255,0.08)",
           color: "#6B7280",
           fontSize: "13px",
         }}
       >
-        © {new Date().getFullYear()} Rasha — All Rights Reserved
+        © {new Date().getFullYear()} Rasha Mubarack — All Rights Reserved
       </footer>
-
     </div>
   );
 }
 
-/* =========================================================
-   INPUT STYLE
-========================================================= */
+/* ================= INPUT STYLE ================= */
 
 const input = {
   width: "100%",
   boxSizing: "border-box",
   padding: "13px",
   background: "#070B18",
-  border: "1px solid rgba(0,245,255,0.2)",
+  border: "1px solid rgba(212,255,20,0.2)",
   color: "#FFFFFF",
   borderRadius: "8px",
   marginBottom: "12px",
   outline: "none",
   fontSize: "14px",
+  fontFamily: "inherit",
 };
-
