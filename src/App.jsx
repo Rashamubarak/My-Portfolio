@@ -600,7 +600,8 @@ const customerSkills = [
               mb: 6,
             }}
           >
-            Strong communication, problem-solving, teamwork, and coordination skills that complement my technical expertise and support effective project delivery.
+            Communication, customer relations and coordination skills
+            that complement my technical background.
           </Typography>
 
           <Container
